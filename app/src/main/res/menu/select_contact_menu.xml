@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".select_contact">
+    <item android:title="Search"
+        android:id="@+id/action_search"
+        android:icon="@mipmap/search_ic"
+        app:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView"/>
+    <item android:title="order Az"
+        android:id="@+id/action_sort"
+        android:icon="@mipmap/settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>

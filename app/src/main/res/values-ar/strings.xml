@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">أيقظني</string>
+    <string name="splash_loading">جاري التحميل....</string>
+    <string name="title_activity_main">المجوعات</string>
+    <string name="app_version_info">Version 1.0.0\nCopyright © 2016 \n Attia Eldsoky * Emad Ahmed\nAll
+    Rights Reserved.</string>
+
+    <string name="CategoryContacts">الأعضاء</string>
+    <string name="frag_db">تأكيد إضافة متصل</string>
+    <string name="frag_addContacts">اختيار</string>
+    <string name="error">خطأ</string>
+    <string name="error_messg">من فضلك ادخل كل الخانات المطلوبة</string>
+    <string name="existing_category">اسم المجموعة او الوقت موجودبالفعل</string>
+    <string name="time_call">سيبدأ الاتصال الأن</string>
+    <string name="service_notify">أيقظني ما زال يعمل</string>
+    <string name="category_Updatedelete">تم حذف المجموعة</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="btn_frag_ok">موافق</string>
+    <string name="defult_category_name">Group</string>
+    <string name="category_time">وقت الإتصال</string>
+    <string name="category_name">إسم المجموعة</string>
+    <string name="category_Time">تحديد وقت للمجموعة</string>
+    <string name="icon_addContact">إضافة متصل</string>
+    <string name="add_category">إضافة مجموعة جديدة</string>
+    <string name="icon_refresh">تحديث</string>
+    <string name="icon_settings">الإعدادات</string>
+    <string name="icon_about">عن التطبيق</string>
+    <string name="delete_contact">حذف متصل</string>
+    <string name="delete_category">حذف مجموعة</string>
+    <string name="delete_messg2">هل ترغب في حذف هذه المجموعة؟ \n كل جهات الاتصال والارقام في المجموعة ستحذف ايضا</string>
+    <string name="search_hint">بحث متصل</string>
+
+    <string name="delete_messg">هل ترغب في حذف هذا المتصل من المجموعة؟</string>
+    <string name="search_result">بحث عن متصل</string>
+    <string name="contacts_update">تم تحديث جهات الاتصال</string>
+    <string name="categories_update">تم تحديث المجموعات</string>
+    <string name="category_info">بيانات</string>
+    <string name="category_info_name">اسم المجموعة: </string>
+    <string name="category_info_time">وقت الاتصال: </string>
+    <string name="category_info_contacts">إجمالي الأعضاء: </string>
+    <string name="category_info_Title">بيانات المجموعة</string>
+    <string name="contact_UpdateDelete">تم حذف المتصل</string>
+    <string name="update_time">تعديل</string>
+    <string name="update_title">تعديل وقت المجموعة</string>
+    <string name="azkar_title_notification">اذكار أيقظني</string>
+    <string name="akzar_morning">لا إله إلا الله وحده لاشريك له\n له الملك وله الحمد\nوهو علي كل شئ قدير</string>
+    <string name="setting_save">حفظ</string>
+    <string name="hint_category_name">ملاحظة: من فضلك إنتبة وانت تختار إسم المجموعة\n\n
+
+    لأن الإسم سيكون ثابت وهذا يعني أنه لا يمكنك تغييره مره أخري\n
+    </string>
+
+</resources>

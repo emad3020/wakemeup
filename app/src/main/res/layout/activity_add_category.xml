@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Add_category"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:orientation="vertical"
+     >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_option"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/category_name"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2sp"
+    android:background="@color/common_action_bar_splitter"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="70sp"
+    android:maxLength="25"
+     android:text="@string/defult_category_name"
+    android:textAlignment="center"
+     android:id="@+id/et_categoryName"
+    android:focusable="true"/>
+    <TextView
+        android:paddingTop="12sp"
+        android:background="@color/common_action_bar_splitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/hint_category_name"
+        />
+    <TextView
+        android:paddingTop="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_option"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="@string/category_time"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/common_action_bar_splitter"/>
+    <TextView
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+         android:paddingTop="12sp"
+        android:hint="@string/category_Time"
+        android:id="@+id/et_categoryTime"/>
+
+    <LinearLayout
+        android:paddingTop="12sp"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+       android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/btn_cancel"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_cancel"
+            android:id="@+id/btn_cancel"/>
+        <!--android:background="#FF6138"-->
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+
+            android:layout_width="0dp"
+            android:background="@drawable/btn_pressed"
+             android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+             android:textColor="#FFFFFF"
+            android:text="@string/btn_frag_ok"
+            android:id="@+id/btn_done"/>
+    </LinearLayout>
+    <TextView
+        android:paddingTop="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+         android:text="Copyright © 2016\nAll Rights Reserved"        />
+ </LinearLayout>
+</ScrollView>

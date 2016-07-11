@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.askerlap.emadahmed.wakemeup">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".Category_Contacts"
+            android:icon="@mipmap/app_icon"
+            android:label="@string/CategoryContacts"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Add_category"
+            android:label="@string/add_category" />
+        <activity android:name=".CallingNumbers" />
+        <activity android:name=".About_Activity" />
+<activity android:name=".searchResults"
+    android:label="Search Results"
+    android:parentActivityName=".select_contact">
+    <intent-filter>
+        <action android:name="android.intent.action.SEARCH"/>
+    </intent-filter>
+    <meta-data
+        android:name="android.app.searchable"
+        android:resource="@xml/searchable"/>
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.askerlap.emadahmed.wakemeup.select_contact" />
+
+</activity>
+        <service
+            android:name=".myService"
+            android:exported="false" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".azkarService" />
+
+        <receiver android:name=".azkarReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/icon_settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".select_contact"
+            android:label="@string/title_activity_select_contact"
+            android:parentActivityName=".Category_Contacts"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".searchResults" />
+        </activity>
+    </application>
+
+</manifest>
